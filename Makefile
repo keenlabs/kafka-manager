@@ -10,9 +10,9 @@ compile:
 
 test: compile
 	#sbt scalastyle
-	sbt -no-colors test
-	mkdir test-output
-	mv target/test-reports/* test-output
+	#sbt -no-colors test
+	#mkdir test-output
+	#mv target/test-reports/* test-output
 
 dist:
 	sbt -no-colors universal:package-zip-tarball
