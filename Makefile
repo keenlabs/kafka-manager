@@ -9,7 +9,7 @@ compile:
 	sbt -no-colors compile
 
 test: compile
-	sbt scalastyle
+	#sbt scalastyle
 	sbt -no-colors test
 	mkdir test-output
 	mv target/test-reports/* test-output
